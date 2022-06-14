@@ -1,39 +1,39 @@
-document.getElementById('usernum')
+var usernum=document.getElementById('usernum').value
 
-
+console.log(usernum);
 
 function guessNumber() {
-  let show=document.getElementById('ans')
-  let numByPc =document.getElementById("demo").innerHTML =
-   Math.floor(Math.random() * 10);
-    console.log("i am ");
+  let show=document.getElementById('ans');
+  let randomByPc=Math.floor(Math.random() * 20);
+  let numByPc =document.getElementById("demo").innerHTML =randomByPc;
     
     
-    if(usernum=="")
+    
+    if(usernum.length==0)
     {
         
-        show.innerText("guess some numer")
-        console.log("i am1");
+        show.innerText="guess some numer";
+       
     }
-     else if(usernum<numByPc)
+     else if(parseInt(usernum)<randomByPc)
     {
         
-        show.innerText("think some big")
-        console.log("i am4");
+        show.innerText="think some big";
+      
     }
 
-    else if(usernum<numByPc)
+    else if(parseInt(usernum)>randomByPc)
     {
     
-        show.innerText("you miss the chance")
-        console.log("i am7");
+        show.innerText="you miss the chance";
+        
     }
 
     else
     {
         
-        show.innerText("you win the game");
-      console.log("i am here");
+        show.innerText="you win the game";
+    
     }
    
     

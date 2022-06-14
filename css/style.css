@@ -4,13 +4,28 @@
   
     background-color: aqua;
     text-align: center;
+    justify-content: center;
 }
 .body p{
     font-size:20px;
     font-family:fantasy;
 }
+.body h3{
+    font-family:cursive;
+    font-weight:100px;
+}
+
 .body button
 {
+    background-color: aqua;
     width:100px;
     height:50px;
+   border-radius:10px ;
+   
+}
+.body button:hover
+{
+    
+    border-left:20px;
+    border-right:20px;
 }
